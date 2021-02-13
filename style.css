@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #252627
+}
+.nav{
+    width: 100vw;
+    height: 100px;
+    background-color: #181818;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav .logo h1{
+    color: #707070;
+    margin-left: 40px;
+}
+.nav .logo h1:hover{
+    color: #ff234b;
+}
+.nav .list-item ul{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.nav .list-item ul li {
+    list-style: none;
+    margin: 5px 20px;
+    
+
+}
+.nav .list-item  ul li a{
+    color: azure;
+text-decoration: none;
+}
+.nav .list-item  ul li a:hover{
+color: #ff234b;
+}
