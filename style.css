@@ -40,6 +40,9 @@ text-decoration: none;
 .nav .list-item  ul li a:hover{
 color: #ff234b;
 }
+span{
+    color: #ff234b;
+}
 /* intro */
 .intro {
     width: 100vw;
@@ -113,4 +116,40 @@ font-weight: 900;
     100%{
     content:'Action';
     }
+}
+
+/* Movies Section*/
+.movies{
+    margin: 50px 15px;
+
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #707070;
+    flex-wrap: wrap;
+}
+.movies .card {
+    text-align: center;
+border-radius: 6px;
+background-color: aliceblue;
+margin: 20px 0px;
+transition: transform 0.5s;
+}
+.movies .card img{
+ height: 250px;
+ border-radius: 5px 5px 0px 0px;
+}
+.movies .card:hover{
+    transform: translateY(-10px);
+}
+.heading{
+    margin: 30px 50px;
+    font-size: 50px;
+    font-weight: 900;
+    color: #505050;
+    width: 100%;
+}
+.heading:hover{
+    color: #ff234b;
 }
