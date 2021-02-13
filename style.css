@@ -52,27 +52,32 @@ color: #ff234b;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    transition: 1s;
+    transition: 5s;
     
     animation-name: animate;
-    animation-direction :alternate-reverse;
-    animation-duration: 2 ;
-    animation-fill-mode: forwards ;
-    animation-iteration-count:infinite ;
-    animation-play-state:running ;
-    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-duration: 5s;
+   
 }
 
-    @keyframes animate{
+ @keyframes animate{
     0%{
         background-image:url(./images/s-1.jpg);
     }
-    20%{background-image:url(./images/s-2.jpg);}
-    40%{background-image:url(./images/s-3.jpg);}
-    60%{background-image:url(./images/s-4.jpg);}
-    80%{background-image:url(./images/s-5.png);}
-    100%{background-image:url(./images/m-1.jpg);}
+    20%{
+        background-image:url(./images/s-2.jpg);
     }
+    40%{background-image:url(./images/s-3.jpg);
+    }
+    60%{background-image:url(./images/s-4.jpg);
+    }
+    80%{
+        background-image:url(./images/s-5.png);
+    }
+    100%{background-image:url(./images/m-1.jpg);
+    }
+}
 
 .intro .text{
 
