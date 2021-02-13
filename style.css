@@ -6,6 +6,7 @@
 body{
     background-color: #252627
 }
+/* Navbar Design*/
 .nav{
     width: 100vw;
     height: 100px;
@@ -38,4 +39,42 @@ text-decoration: none;
 }
 .nav .list-item  ul li a:hover{
 color: #ff234b;
+}
+/* intro */
+.intro {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 600px;
+    width: 100%;
+    background-image: url(./images/s-1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 1s;
+    
+    animation-name: animate;
+    animation-direction :alternate-reverse;
+    animation-duration: 2 ;
+    animation-fill-mode: forwards ;
+    animation-iteration-count:infinite ;
+    animation-play-state:running ;
+    animation-timing-function: ease-in-out;
+}
+
+    @keyframes animate{
+    0%{
+        background-image:url(./images/s-1.jpg);
+    }
+    20%{background-image:url(./images/s-2.jpg);}
+    40%{background-image:url(./images/s-3.jpg);}
+    60%{background-image:url(./images/s-4.jpg);}
+    80%{background-image:url(./images/s-5.png);}
+    100%{background-image:url(./images/m-1.jpg);}
+    }
+
+.intro .text{
+
+    width: 200px;
 }
