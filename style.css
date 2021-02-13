@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 body{
+    scroll-behavior: smooth;
     background-color: #252627
 }
 /* Navbar Design*/
@@ -194,6 +197,11 @@ transition: transform 0.5s;
     overflow: hidden;
     border-radius: 5px;
     color: white;
+    transition: transform .5s;
+}
+.drama .box:hover{
+    transform: translateY(-15px);
+
 }
 .drama .box .sub{
     display: flex;
