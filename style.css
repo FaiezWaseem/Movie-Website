@@ -108,13 +108,13 @@ font-weight: 900;
 @keyframes text{
     
     0%{
-    content:'Movies';
+    content:'Action';
     }
     50%{
    content:'Drama';
     }
     100%{
-    content:'Action';
+    content:'Movies';
     }
 }
 
@@ -152,4 +152,25 @@ transition: transform 0.5s;
 }
 .heading:hover{
     color: #ff234b;
+}
+.seemore {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin: 5px 20px 0px 0px;
+
+}
+.btn{
+    margin-bottom: 20px;
+    margin-right: 50px;
+    border-radius: 5px;
+    border: 2px solid #ff234b;
+    background-color: transparent;
+    color: white;
+    padding: 5px;
+    transition: transform .5s;
+}
+.btn:hover{
+    transform: scaleX(1.045);
 }
