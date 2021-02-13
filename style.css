@@ -11,6 +11,8 @@ body{
 }
 /* Navbar Design*/
 .nav{
+    position: sticky;
+    top: 0px;
     width: 100vw;
     height: 100px;
     background-color: #181818;
@@ -179,7 +181,7 @@ transition: transform 0.5s;
 }
 
 /* drama*/
-/* Over view*/
+
 .drama{
     margin: 120px 20px 50px 20px;
     display: flex;
@@ -226,7 +228,7 @@ transition: transform 0.5s;
 .foot{
     box-sizing: border-box;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     background-color: black;
     color: white;
