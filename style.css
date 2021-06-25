@@ -11,14 +11,19 @@ body{
 }
 /* Navbar Design*/
 .nav{
-    position: sticky;
-    top: 0px;
-    width: 100vw;
     height: 100px;
     background-color: #181818;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+#ham{
+    color: #fff;
+    display: none;
+}
+.nav .logo{
+    display: flex;
+    justify-content: space-between;
 }
 .nav .logo h1{
     color: #707070;
@@ -88,6 +93,30 @@ span{
     100%{background-image:url(./images/m-1.jpg);
     }
 }
+@media screen and (max-width:768px) {
+    .nav .logo h1{
+        font-size: 1rem;
+    }
+    .list-item ul{
+        flex-direction: column;
+    }
+    .logo, .list-item ul li{
+        width: 100%;
+    }
+    .nav{
+   height: auto;
+   flex-direction: column;
+   padding: 10px;
+
+    }
+    .list-item{
+        display: none;
+    }
+    #ham{
+        display: block;
+    }
+    
+}
 
 .intro .text{
      margin: 50px 100px;
@@ -127,18 +156,23 @@ font-weight: 900;
 .movies{
     margin: 50px 15px;
 
-    overflow: hidden;
+  overflow-y: hidden;
+  overflow-x: scroll;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: #707070;
-    flex-wrap: wrap;
+ 
 }
+.movies::-webkit-scrollbar {
+    display: none;
+  }
 .movies .card {
     text-align: center;
 border-radius: 6px;
 background-color: aliceblue;
-margin: 20px 0px;
+margin: 20px 20px;
 transition: transform 0.5s;
 }
 .movies .card img{
@@ -149,7 +183,7 @@ transition: transform 0.5s;
     transform: translateY(-10px);
 }
 .heading{
-    margin: 30px 50px;
+   
     font-size: 50px;
     font-weight: 900;
     color: #505050;
@@ -177,7 +211,7 @@ transition: transform 0.5s;
     transition: transform .5s;
 }
 .btn:hover{
-    transform: scaleX(1.045);
+    transform: scaleX(1);
 }
 
 /* drama*/
@@ -243,4 +277,22 @@ transition: transform 0.5s;
 }
 .foot .icon:hover{
     color: #48CFAD;
+}
+@media screen and (max-width:768px) {
+    .foot .icon{
+        font-size: 1rem;
+      margin-left: 10px;
+    }
+    .heading{
+        font-size: 2rem;
+    }
+    .intro .text {
+        padding: 0px;
+    }
+    .intro .text h2{
+        font-size: 1rem;
+    }
+    .intro .text p{
+        font-size: 1rem;
+    }
 }
